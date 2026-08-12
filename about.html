@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Suhitha Ganesh - About</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #7B2D2D;">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Suhitha Ganesh</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="text-white text-center py-4" style="background-color: #7B2D2D;">
+  <h1 class="fw-bold">About Me</h1>
+</header>
+<div class="text-end container mt-2">
+  <button id="darkModeBtn" onclick="toggleDarkMode()" style="background-color:#7B2D2D; color:white; border:none; padding:8px 15px; border-radius:5px; cursor:pointer;">
+    🌙 Dark Mode
+  </button>
+</div>
+<main class="container my-5">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Education</h2>
+      <p><strong>Berklee College of Music</strong> · Boston, MA · Expected 2027<br>
+      B.M. Music Business | Minor: Film Scoring</p>
+      <p><em>Relevant Coursework:</em> Music Publishing Contracts · Sync Licensing & Music Supervision · A&R & Artist Development · Music Copyright & Law · Music Industry Finance · Film Scoring</p>
+      <p><strong>Mount Carmel College</strong> · Bangalore, India<br>
+      Completed 1 Year of B.Com (Hons) with Integrated CMA<br>
+      Core Focus: Financial Accounting and Management Principles</p>
+    </div>
+    <div class="col-md-6">
+      <h2>Skills & Tools</h2>
+      <p><strong>Software:</strong> Microsoft Excel · Google Sheets · Canva · Logic Pro (working knowledge)</p>
+      <p><strong>Languages:</strong> Tamil (native) · English (fluent) · Hindi (reading & written) · French (reading & written)</p>
+    </div>
+  </div>
+</main>
+
+<footer class="text-center py-3" style="background-color: #7B2D2D; color: white;">
+  <small><i>Copyright &copy; 2025 Suhitha Ganesh</i></small>
+</footer>
+<script>
+function toggleDarkMode() {
+  document.body.classList.toggle('light-mode');
+  var btn = document.getElementById('darkModeBtn');
+  if (document.body.classList.contains('light-mode')) {
+    btn.textContent = '🌙 Dark Mode';
+  } else {
+    btn.textContent = '☀️ Light Mode';
+  }
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

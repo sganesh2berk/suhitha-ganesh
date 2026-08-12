@@ -1,0 +1,73 @@
+/* Base styles */
+body {
+  background-color: #111111 !important;
+  color: #ffffff !important;
+  font-family: Arial, sans-serif;
+}
+
+/* Hero header with background image */
+.hero {
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('perform.jpeg');
+  background-size: cover;
+  background-position: 50% 15%;
+  color: white !important;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+/* Card styles */
+.card {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+  border-color: #333 !important;
+}
+
+.card-subtitle {
+  color: #aaaaaa !important;
+}
+
+h2 {
+  color: #ffffff !important;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+/* Dark mode toggle styles */
+body.dark-mode {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+body.dark-mode .card {
+  background-color: #111111 !important;
+  color: #ffffff !important;
+  border-color: #333 !important;
+}
+
+/* Light mode styles */
+body.light-mode {
+  background-color: #ffffff !important;
+  color: #222222 !important;
+}
+
+body.light-mode .card {
+  background-color: #ffffff !important;
+  color: #222222 !important;
+  border-color: #ddd !important;
+}
+
+body.light-mode h2 {
+  color: #7B2D2D !important;
+}
+
+/* Fade in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

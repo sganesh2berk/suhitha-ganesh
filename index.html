@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Suhitha Ganesh</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Bootstrap Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #7B2D2D;">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Suhitha Ganesh</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<header class="hero">
+  <h1 class="display-4 fw-bold">Suhitha Ganesh</h1>
+  <p class="lead"><em>Music Business · A&R · Sync &amp; Licensing · Publishing</em></p>
+  <p>Boston, MA</p>
+</header>
+<div class="text-end container mt-2">
+  <button id="darkModeBtn" onclick="toggleDarkMode()" style="background-color:#7B2D2D; color:white; border:none; padding:8px 15px; border-radius:5px; cursor:pointer;">
+    🌙 Dark Mode
+  </button>
+</div>
+
+<!-- Main Content -->
+<main class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-md-4 text-center">
+      <img src="profile.jpg" alt="Suhitha Ganesh" class="img-fluid rounded-circle" style="max-width: 250px;">
+    </div>
+    <div class="col-md-8">
+      <h2>Welcome</h2>
+      <p>I'm a Music Business student at Berklee College of Music with a minor in Film Scoring. My focus is in sync licensing, music publishing, and the business side of the music industry.</p>
+      <h2>What I Do</h2>
+      <p>I'm passionate about connecting music to visual media through sync licensing. I'm interested in building a career in music publishing and supervision, working at the intersection of creative and commercial music.</p>
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="text-center py-3" style="background-color: #7B2D2D; color: white;">
+  <small><i>Copyright &copy; 2025 Suhitha Ganesh</i></small>
+</footer>
+<script>
+function toggleDarkMode() {
+  document.body.classList.toggle('light-mode');
+  var btn = document.getElementById('darkModeBtn');
+  if (document.body.classList.contains('light-mode')) {
+    btn.textContent = '🌙 Dark Mode';
+  } else {
+    btn.textContent = '☀️ Light Mode';
+  }
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

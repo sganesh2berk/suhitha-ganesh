@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Suhitha Ganesh - Experience</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #7B2D2D;">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Suhitha Ganesh</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="experience.html">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="text-white text-center py-4" style="background-color: #7B2D2D;">
+  <h1 class="fw-bold">Experience</h1>
+</header>
+<div class="text-end container mt-2">
+  <button id="darkModeBtn" onclick="toggleDarkMode()" style="background-color:#7B2D2D; color:white; border:none; padding:8px 15px; border-radius:5px; cursor:pointer;">
+    🌙 Dark Mode
+  </button>
+</div>
+<main class="container my-5">
+
+  <h2>Work Experience</h2>
+  <div class="card mb-4">
+    <div class="card-body">
+      <h5 class="card-title">Event Volunteer — Finance & Logistics</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Berklee South Asian Music & Arts Association · Boston, MA · April 2026</h6>
+      <ul>
+        <li>Tracked expenses and managed budget allocations for a South Asian music industry panel event.</li>
+        <li>Coordinated day-of logistics including scheduling, setup, and on-site operations for a live multi-act show.</li>
+        <li>Drafted panelist bios and interview questions for an industry panel featuring South Asian music professionals.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Performances</h2>
+  <div class="row">
+    <div class="col-md-4 text-center">
+      <img src="perform.jpeg" alt="Suhitha performing at Berklee" class="img-fluid rounded mb-3">
+    </div>
+    <div class="col-md-8">
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Recorder · Audire Soundtrack Collective</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Berklee College of Music · April 2024</h6>
+          <p>Performed anime and video game soundtrack arrangements as part of Berklee's student-led soundtrack ensemble.</p>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Recorder · Motion Pictures Orchestra, Woodwinds Choir</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Berklee College of Music · April 2024</h6>
+          <p>Performed in an orchestral arrangement of "Barbenheimer" with Berklee's Motion Pictures Orchestra woodwinds section.</p>
+        </div>
+      </div>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Recorder · Collaborative Performances</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Pitanga · Auroville · École de Français, Pondicherry · 2017 & 2018</h6>
+          <p>Performed recorder in a series of collaborative concerts across multiple venues in Auroville and Pondicherry, India.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Projects</h2>
+  <div class="card mb-4">
+    <div class="card-body">
+      <h5 class="card-title">Independent Label Business Plan — Regional Indian Market</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Berklee College of Music · Academic Project · 2024</h6>
+      <ul>
+        <li>Developed a label business plan focused on artists from under-resourced regions of India who lack access to industry infrastructure.</li>
+        <li>Researched target demographics, geographic market scope, and a growth strategy built around establishing contacts in LA and New York first.</li>
+        <li>Created P&L statements, balance sheets, and budgets covering staffing, office, and artist-related costs.</li>
+      </ul>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-center py-3" style="background-color: #7B2D2D; color: white;">
+  <small><i>Copyright &copy; 2025 Suhitha Ganesh</i></small>
+</footer>
+<script>
+function toggleDarkMode() {
+  document.body.classList.toggle('light-mode');
+  var btn = document.getElementById('darkModeBtn');
+  if (document.body.classList.contains('light-mode')) {
+    btn.textContent = '🌙 Dark Mode';
+  } else {
+    btn.textContent = '☀️ Light Mode';
+  }
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
